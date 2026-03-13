@@ -5,14 +5,14 @@
 ## Metadata
 
 - **Package**: lily-svelte-sveltekit-examples
-- **Version**: 0.1.0
+- **Version**: 0.2.0
 - **Created**: 2026-03-03
 - **License**: MIT or Apache-2.0 or GPL-2.0 or GPL-3.0 or contact us for more
 - **Contact**: Joel Parker Henderson (joel@joelparkerhenderson.com)
 
 ## Overview
 
-Svelte 5 + SvelteKit 2 example application demonstrating all 236 components from the Lily Design System headless component library, styled with NHS UK design system colors, typography, spacing, and focus states.
+Svelte 5 + SvelteKit 2 example application demonstrating all 284 components from the Lily Design System headless component library, styled with NHS UK design system colors, typography, spacing, and focus states.
 
 ## IMPORTANT Architecture
 
