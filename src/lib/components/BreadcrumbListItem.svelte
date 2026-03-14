@@ -1,8 +1,8 @@
 <script lang="ts">
-    // BreadcrumbNavListItem component
+    // BreadcrumbListItem component
     //
     // A single step in a breadcrumb navigation trail. Renders as a semantic <li>
-    // element designed to be placed inside a BreadcrumbNavList component. Supports
+    // element designed to be placed inside a BreadcrumbList component. Supports
     // aria-current="page" to indicate the user's current location. Typically
     // contains a link for ancestor pages, or plain text for the current page.
     //
@@ -13,14 +13,14 @@
     //   ...restProps — additional HTML attributes spread onto the <li>.
     //
     // Syntax:
-    //   <BreadcrumbNavListItem><a href="/">Home</a></BreadcrumbNavListItem>
+    //   <BreadcrumbListItem><a href="/">Home</a></BreadcrumbListItem>
     //
     // Examples:
     //   <!-- Navigable ancestor page -->
-    //   <BreadcrumbNavListItem><a href="/products">Products</a></BreadcrumbNavListItem>
+    //   <BreadcrumbListItem><a href="/products">Products</a></BreadcrumbListItem>
     //
     //   <!-- Current page (no link) -->
-    //   <BreadcrumbNavListItem current>About</BreadcrumbNavListItem>
+    //   <BreadcrumbListItem current>About</BreadcrumbListItem>
     //
     // Keyboard:
     //   None directly — keyboard interaction is handled by the contained links.
@@ -34,7 +34,7 @@
     //
     // Claude rules:
     //   - Headless: no CSS, no styles — consumer provides all styling
-    //   - Compound component: must be used inside a BreadcrumbNavList
+    //   - Compound component: must be used inside a BreadcrumbList
     //
     // References:
     //   - WAI-ARIA Breadcrumb Pattern: https://www.w3.org/WAI/ARIA/apd/patterns/breadcrumb/
@@ -55,9 +55,9 @@
     } = $props();
 </script>
 
-<!-- BreadcrumbNavListItem.svelte -->
+<!-- BreadcrumbListItem.svelte -->
 <li
-    class={`breadcrumb-nav-list-item ${className}`}
+    class={`breadcrumb-list-item ${className}`}
     aria-current={current ? "page" : undefined}
     {...restProps}
 >

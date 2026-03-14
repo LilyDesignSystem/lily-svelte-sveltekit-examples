@@ -4,8 +4,8 @@
     import Footer from "$lib/components/Footer.svelte";
     import NavigationMenu from "$lib/components/NavigationMenu.svelte";
     import BreadcrumbNav from "$lib/components/BreadcrumbNav.svelte";
-    import BreadcrumbNavList from "$lib/components/BreadcrumbNavList.svelte";
-    import BreadcrumbNavListItem from "$lib/components/BreadcrumbNavListItem.svelte";
+    import BreadcrumbList from "$lib/components/BreadcrumbList.svelte";
+    import BreadcrumbListItem from "$lib/components/BreadcrumbListItem.svelte";
     import Sidebar from "$lib/components/Sidebar.svelte";
     import ContentsNav from "$lib/components/ContentsNav.svelte";
     import ContentsList from "$lib/components/ContentsList.svelte";
@@ -34,13 +34,13 @@
     <BackLink href="/">Back to examples</BackLink>
 
     <BreadcrumbNav label="Breadcrumb">
-        <BreadcrumbNavList>
-            <BreadcrumbNavListItem><a href="/">Home</a></BreadcrumbNavListItem>
-            <BreadcrumbNavListItem
-                ><a href="/page-layout">Health A to Z</a></BreadcrumbNavListItem
+        <BreadcrumbList>
+            <BreadcrumbListItem><a href="/">Home</a></BreadcrumbListItem>
+            <BreadcrumbListItem
+                ><a href="/page-layout">Health A to Z</a></BreadcrumbListItem
             >
-            <BreadcrumbNavListItem current>Page Layout</BreadcrumbNavListItem>
-        </BreadcrumbNavList>
+            <BreadcrumbListItem current>Page Layout</BreadcrumbListItem>
+        </BreadcrumbList>
     </BreadcrumbNav>
 
     <div

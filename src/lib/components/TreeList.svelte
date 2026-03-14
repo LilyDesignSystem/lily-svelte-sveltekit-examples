@@ -1,5 +1,5 @@
 <script lang="ts">
-    // TreeNavList component
+    // TreeList component
     //
     // A headless hierarchical list using the ARIA tree role with full keyboard
     // navigation. Renders a <ul> with role="tree" and manages focus movement
@@ -14,15 +14,15 @@
     //   ...restProps — additional HTML attributes spread onto the <ul>.
     //
     // Syntax:
-    //   <TreeNavList label="File browser">...</TreeNavList>
+    //   <TreeList label="File browser">...</TreeList>
     //
     // Examples:
     //   <!-- File browser tree view -->
-    //   <TreeNavList label="File browser">
+    //   <TreeList label="File browser">
     //     <li role="treeitem" tabindex="0">Documents</li>
     //     <li role="treeitem" tabindex="-1">Photos</li>
     //     <li role="treeitem" tabindex="-1">Videos</li>
-    //   </TreeNavList>
+    //   </TreeList>
     //
     // Keyboard:
     //   - ArrowDown: move focus to the next tree item (wraps to first)
@@ -44,7 +44,7 @@
     //   - Uses $state() for internal DOM reference
     //
     // References:
-    //   - WAI-ARIA Tree View Pattern: https://www.w3.org/WAI/ARIA/apg/patterns/TreeNavList/
+    //   - WAI-ARIA Tree View Pattern: https://www.w3.org/WAI/ARIA/apg/patterns/TreeList/
     //   - WAI-ARIA tree role: https://www.w3.org/TR/wai-aria-1.2/#tree
 
     import type { Snippet } from "svelte";
@@ -98,9 +98,9 @@
     }
 </script>
 
-<!-- TreeNavList.svelte -->
+<!-- TreeList.svelte -->
 <ol
-    class={`tree-nav-list ${className}`}
+    class={`tree-list ${className}`}
     role="tree"
     aria-label={label}
     bind:this={treeRef}

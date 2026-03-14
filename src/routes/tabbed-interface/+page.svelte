@@ -2,13 +2,13 @@
     import TabBar from "$lib/components/TabBar.svelte";
     import TabBarButton from "$lib/components/TabBarButton.svelte";
     import AccordionNav from "$lib/components/AccordionNav.svelte";
-    import AccordionNavList from "$lib/components/AccordionNavList.svelte";
-    import AccordionNavListItem from "$lib/components/AccordionNavListItem.svelte";
+    import AccordionList from "$lib/components/AccordionList.svelte";
+    import AccordionListItem from "$lib/components/AccordionListItem.svelte";
     import Badge from "$lib/components/Badge.svelte";
     import Card from "$lib/components/Card.svelte";
     import Panel from "$lib/components/Panel.svelte";
     import TreeNav from "$lib/components/TreeNav.svelte";
-    import TreeNavList from "$lib/components/TreeNavList.svelte";
+    import TreeList from "$lib/components/TreeList.svelte";
     import ToggleGroup from "$lib/components/ToggleGroup.svelte";
     import ToggleButton from "$lib/components/ToggleButton.svelte";
     import Separator from "$lib/components/Separator.svelte";
@@ -107,8 +107,8 @@
 
     <h2>Accordion</h2>
     <AccordionNav label="FAQ accordion">
-        <AccordionNavList>
-            <AccordionNavListItem>
+        <AccordionList>
+            <AccordionListItem>
                 <details>
                     <summary>How do I register with a GP?</summary>
                     <div style="padding: var(--nhs-space-3);">
@@ -119,8 +119,8 @@
                         </p>
                     </div>
                 </details>
-            </AccordionNavListItem>
-            <AccordionNavListItem>
+            </AccordionListItem>
+            <AccordionListItem>
                 <details>
                     <summary>How do I book an appointment?</summary>
                     <div style="padding: var(--nhs-space-3);">
@@ -130,8 +130,8 @@
                         </p>
                     </div>
                 </details>
-            </AccordionNavListItem>
-            <AccordionNavListItem>
+            </AccordionListItem>
+            <AccordionListItem>
                 <details>
                     <summary>What should I do in an emergency?</summary>
                     <div style="padding: var(--nhs-space-3);">
@@ -142,39 +142,39 @@
                         </p>
                     </div>
                 </details>
-            </AccordionNavListItem>
-        </AccordionNavList>
+            </AccordionListItem>
+        </AccordionList>
     </AccordionNav>
 
     <Separator />
 
     <h2>Tree Navigation</h2>
     <TreeNav label="Department hierarchy">
-        <TreeNavList label="Hospital">
+        <TreeList label="Hospital">
             <li>
                 Medicine
-                <TreeNavList label="Medicine departments">
+                <TreeList label="Medicine departments">
                     <li>Cardiology</li>
                     <li>Neurology</li>
                     <li>Gastroenterology</li>
-                </TreeNavList>
+                </TreeList>
             </li>
             <li>
                 Surgery
-                <TreeNavList label="Surgery departments">
+                <TreeList label="Surgery departments">
                     <li>General Surgery</li>
                     <li>Orthopaedics</li>
                     <li>Urology</li>
-                </TreeNavList>
+                </TreeList>
             </li>
             <li>
                 Diagnostics
-                <TreeNavList label="Diagnostics departments">
+                <TreeList label="Diagnostics departments">
                     <li>Radiology</li>
                     <li>Pathology</li>
-                </TreeNavList>
+                </TreeList>
             </li>
-        </TreeNavList>
+        </TreeList>
     </TreeNav>
 
     <Separator />

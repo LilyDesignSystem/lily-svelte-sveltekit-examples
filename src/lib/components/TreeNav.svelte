@@ -46,7 +46,7 @@
     //   - Uses $state() for internal DOM reference
     //
     // References:
-    //   - WAI-ARIA Tree View Pattern: https://www.w3.org/WAI/ARIA/apd/patterns/TreeNavList/
+    //   - WAI-ARIA Tree View Pattern: https://www.w3.org/WAI/ARIA/apd/patterns/TreeList/
 
     import type { Snippet } from "svelte";
 

@@ -1,33 +1,33 @@
 <script lang="ts">
-    // BreadcrumbNavList component
+    // BreadcrumbList component
     //
-    // An ordered list that contains BreadcrumbNavListItem children, representing
+    // An ordered list that contains BreadcrumbListItem children, representing
     // the hierarchical trail in a breadcrumb navigation. Renders a semantic
     // <ol> element to convey the ordered relationship of pages. Must be placed
     // inside a BreadcrumbNav container.
     //
     // Props:
     //   className — string, optional. CSS class name.
-    //   children — Snippet, required. BreadcrumbNavListItem elements.
+    //   children — Snippet, required. BreadcrumbListItem elements.
     //   ...restProps — additional HTML attributes spread onto the <ol>.
     //
     // Syntax:
-    //   <BreadcrumbNavList>
-    //     <BreadcrumbNavListItem>...</BreadcrumbNavListItem>
-    //   </BreadcrumbNavList>
+    //   <BreadcrumbList>
+    //     <BreadcrumbListItem>...</BreadcrumbListItem>
+    //   </BreadcrumbList>
     //
     // Examples:
     //   <!-- Breadcrumb list inside a nav -->
     //   <BreadcrumbNav label="Breadcrumb">
-    //     <BreadcrumbNavList>
-    //       <BreadcrumbNavListItem><a href="/">Home</a></BreadcrumbNavListItem>
-    //       <BreadcrumbNavListItem><a href="/products">Products</a></BreadcrumbNavListItem>
-    //       <BreadcrumbNavListItem current>Widget</BreadcrumbNavListItem>
-    //     </BreadcrumbNavList>
+    //     <BreadcrumbList>
+    //       <BreadcrumbListItem><a href="/">Home</a></BreadcrumbListItem>
+    //       <BreadcrumbListItem><a href="/products">Products</a></BreadcrumbListItem>
+    //       <BreadcrumbListItem current>Widget</BreadcrumbListItem>
+    //     </BreadcrumbList>
     //   </BreadcrumbNav>
     //
     // Keyboard: None — passive container. Keyboard interactions are handled
-    // by links within BreadcrumbNavListItem children.
+    // by links within BreadcrumbListItem children.
     //
     // Accessibility:
     //   - <ol> conveys the ordered hierarchical relationship of the trail
@@ -38,7 +38,7 @@
     //   - Separator characters (e.g. "/" or ">") should be added by the consumer
     //
     // Claude rules:
-    //   - Compound component — used inside BreadcrumbNav, contains BreadcrumbNavListItem children
+    //   - Compound component — used inside BreadcrumbNav, contains BreadcrumbListItem children
     //   - Headless: no CSS, no styles — consumer provides all styling
     //   - Separator characters between items are the consumer's responsibility
     //
@@ -52,15 +52,15 @@
         children,
         ...restProps
     }: {
-        /** BreadcrumbNavListItem elements. */
+        /** BreadcrumbListItem elements. */
         children: Snippet;
         [key: string]: unknown;
     } = $props();
 </script>
 
-<!-- BreadcrumbNavList.svelte -->
+<!-- BreadcrumbList.svelte -->
 <ol
-    class={`breadcrumb-nav-list ${className}`}
+    class={`breadcrumb-list ${className}`}
     {...restProps}
 >
     {@render children()}

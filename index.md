@@ -122,10 +122,10 @@ Components are headless (unstyled) by default. Each component renders a semantic
 
 ```svelte
 <BreadcrumbNav label="Breadcrumb">
-  <BreadcrumbNavList>
-    <BreadcrumbNavListItem><a href="/">Home</a></BreadcrumbNavListItem>
-    <BreadcrumbNavListItem current>Page</BreadcrumbNavListItem>
-  </BreadcrumbNavList>
+  <BreadcrumbList>
+    <BreadcrumbListItem><a href="/">Home</a></BreadcrumbListItem>
+    <BreadcrumbListItem current>Page</BreadcrumbListItem>
+  </BreadcrumbList>
 </BreadcrumbNav>
 ```
 
