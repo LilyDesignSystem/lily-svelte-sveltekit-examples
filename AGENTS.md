@@ -1,6 +1,9 @@
 # Lily Design System - Svelte SvelteKit Examples
 
 @AGENTS/lily.md
+@AGENTS/components.md
+@AGENTS/accessibility.md
+@AGENTS/internationalization.md
 
 ## Metadata
 
